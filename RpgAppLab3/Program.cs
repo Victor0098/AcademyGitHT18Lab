@@ -16,6 +16,8 @@ namespace RpgAppLab3
                 var randomIndex = rnd.Next(allNames.Length);
                 Console.WriteLine(allNames[randomIndex]);
             }
+            if (command == "D4")
+                Console.WriteLine(rnd.Next(1,5));
             Console.ReadKey();
         }
     }
