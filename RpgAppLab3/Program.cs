@@ -14,6 +14,13 @@ namespace RpgAppLab3
             {
                 Console.WriteLine(rnd.Next(1, 8));
             }
+
+            if (command == "equipment")
+            {
+                Equipment eq = new Equipment();
+                eq.Name = "plate";
+                Console.WriteLine(eq.Name);
+            }
             if (command == "names")
             {
                 PersonGenerator personGenerator = new PersonGenerator();
