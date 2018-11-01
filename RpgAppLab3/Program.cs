@@ -16,10 +16,9 @@ namespace RpgAppLab3
             }
             if (command == "names")
             {
-                var allNames = new[] { "Briana", "Ben", "David",
-            "Dana", "Felicia", "Felix" };
-                var randomIndex = rnd.Next(allNames.Length);
-                Console.WriteLine(allNames[randomIndex]);
+                PersonGenerator personGenerator = new PersonGenerator();
+                var name = personGenerator.GetRandom();
+                Console.WriteLine(name);
             }
             Console.ReadKey();
         }
