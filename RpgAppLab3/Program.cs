@@ -9,6 +9,7 @@ namespace RpgAppLab3
             var rnd = new Random();
             Console.WriteLine("What do you need?");
             var command = Console.ReadLine();
+            if (command == "roll D20") Console.WriteLine("not implemented :(");
             if (command == "names")
             {
                 var allNames = new[] { "Briana", "Ben", "David",
