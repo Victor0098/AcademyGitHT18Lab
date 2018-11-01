@@ -9,7 +9,7 @@ namespace RpgAppLab3
 
         Random rnd = new Random();
         string[] allNames = new[] { "Briana", "Ben", "David",
-            "Dana", "Felicia", "Felix" };
+            "Dana", "Felicia", "Felix", "Frodo", "Hobbit", "Legolas", "Aragorn" };
         List<Person> persons = new List<Person>();
 
         public PersonGenerator()
