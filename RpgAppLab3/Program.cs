@@ -29,7 +29,7 @@ namespace RpgAppLab3
             if (command == "D4")
                 Console.WriteLine(rnd.Next(1,5));
 
-            var allEquipment = new []{ "hammer", "terminator" };
+            var allEquipment = new []{ "hammer", "terminator", "dragon" };
             Console.ReadKey();
         }
     }
