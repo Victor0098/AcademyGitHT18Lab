@@ -10,10 +10,10 @@ namespace RpgAppLab3
             Console.WriteLine("What do you need?");
             var command = Console.ReadLine();
 
-            if (command == "roll D15")
+            if (command == "roll D100")
             {
 
-                var dice = rnd.Next(15) + 1;
+                var dice = rnd.Next(100) + 1;
                 Console.WriteLine($"Your dice roll is: {dice}");
             }
 
