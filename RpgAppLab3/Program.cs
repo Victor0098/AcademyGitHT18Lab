@@ -16,6 +16,7 @@ namespace RpgAppLab3
                 var dice = rnd.Next(100) + 1;
                 Console.WriteLine($"Your dice roll is: {dice}");
             }
+            Console.WriteLine(command);
 
             if (command == "names")
             {
