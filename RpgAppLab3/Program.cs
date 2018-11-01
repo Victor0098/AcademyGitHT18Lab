@@ -21,7 +21,7 @@ namespace RpgAppLab3
             if (command == "names")
             {
                 var allNames = new[] { "Briana", "Ben", "David",
-            "Dana", "Felicia", "Felix" };
+                "Dana", "Felicia", "Felix", "Leonardo", "Amelie" };
                 var randomIndex = rnd.Next(allNames.Length);
                 Console.WriteLine(allNames[randomIndex]);
             }
@@ -29,6 +29,8 @@ namespace RpgAppLab3
                 Console.WriteLine(rnd.Next(1,11));
             if (command == "D4")
                 Console.WriteLine(rnd.Next(1,5));
+
+            var allEquipment = new []{ "hammer", "terminator", "dragon" };
             Console.ReadKey();
         }
     }
