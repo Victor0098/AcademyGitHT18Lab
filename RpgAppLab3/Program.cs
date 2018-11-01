@@ -23,5 +23,12 @@ namespace RpgAppLab3
             }
             Console.ReadKey();
         }
+    }  
+    internal class Dice
+    {
+        public int DiceNumbers { get; set; }
+        public int numberOfDiceRounds { get; set; }
+        
+
     }
 }
