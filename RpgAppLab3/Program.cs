@@ -10,14 +10,31 @@ namespace RpgAppLab3
             Console.WriteLine("What do you need?");
             var command = Console.ReadLine();
             if (command == "roll D20") Console.WriteLine("not implemented :(");
+            if (command == "roll D8")
+            {
+                Console.WriteLine(rnd.Next(1, 8));
+            }
+
+            if (command == "equipment")
+            {
+                Equipment eq = new Equipment();
+                eq.Name = "plate";
+                Console.WriteLine(eq.Name);
+            }
             if (command == "names")
             {
-                var allNames = new[] { "Briana", "Ben", "David",
-            "Dana", "Felicia", "Felix" };
-                var randomIndex = rnd.Next(allNames.Length);
-                Console.WriteLine(allNames[randomIndex]);
+                PersonGenerator personGenerator = new PersonGenerator();
+                var name = personGenerator.GetRandom();
+                Console.WriteLine(name);
             }
             Console.ReadKey();
         }
+    }  
+    internal class Dice
+    {
+        public int DiceNumbers { get; set; }
+        public int numberOfDiceRounds { get; set; }
+        
+
     }
 }
