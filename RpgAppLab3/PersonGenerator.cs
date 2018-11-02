@@ -8,8 +8,8 @@ namespace RpgAppLab3
     {
 
         Random rnd = new Random();
-        string[] allNames = new[] { "Mr.Bush", "Mr.Mandela", "Mr.Statsminister",
-            "Mr.Hussein", "Mr.Hitler", "Mr.KimYungUn", "Mr.Trump", "Mr.Putin", "Mr.Assaad", "Mr.CheGuevara" };
+        string[] allNames = new[] { "Arnold", "Mr.Big", "Mumintrollet",
+            "Bamse", "Hannibal", "Mr.KimYungUn", "Mr.Trump", "Mr.Putin", "Mr.Assaad", "Mr.CheGuevara" };
         List<Person> persons = new List<Person>();
 
         public PersonGenerator()
