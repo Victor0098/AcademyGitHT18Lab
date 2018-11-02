@@ -15,41 +15,50 @@ namespace RpgAppLab3
             {
                 Console.WriteLine(rnd.Next(1, 8));
             }
+
+            if (command == "equipment")
+            {
+                Equipment eq = new Equipment();
+                eq.Name = "plate";
+                Console.WriteLine(eq.Name);
+            }
+            if (command == "names")
+            {
+                PersonGenerator personGenerator = new PersonGenerator();
+                var name = personGenerator.GetRandom();
+                Console.WriteLine(name);
 =======
 
-            if (command == "roll D4")
+            if (command == "roll D100")
             {
-                Console.WriteLine("Its implemented :(");
+
+                var dice = rnd.Next(100) + 1;
+                Console.WriteLine($"Your dice roll is: {dice}");
             }
-            else 
-            Console.WriteLine("Again, What do you need?");
-            var command2 = Console.ReadLine();
+            Console.WriteLine(command);
 
-            if (command == "roll D4")
-            {
-                Console.WriteLine("Its not implemented :(");
-            }
-            Console.WriteLine("Again, Again What do you need?");
-            var command3 = Console.ReadLine();
-
-            if (command == "roll D4")
-            {
-                Console.WriteLine("Its maybe implemented :(");
-            }
-
-            Console.WriteLine();
-            Console.WriteLine("Again, Again, Again, What do you need?");
-            var command4 = Console.ReadLine();
-
->>>>>>> 4c16cba40df88794be34a30f3a0226c21fea3067
             if (command == "names")
             {
                 var allNames = new[] { "Briana", "Ben", "David",
-            "Dana", "Felicia", "Felix" };
+                "Dana", "Felicia", "Felix", "Leonardo", "Amelie" };
                 var randomIndex = rnd.Next(allNames.Length);
                 Console.WriteLine(allNames[randomIndex]);
+>>>>>>> 91bd54253764b83925bc6fd349aa6431e2bdb569
             }
+            if (command == "D10")
+                Console.WriteLine(rnd.Next(1,11));
+            if (command == "D4")
+                Console.WriteLine(rnd.Next(1,5));
+
+            var allEquipment = new []{ "hammer", "terminator", "dragon" };
             Console.ReadKey();
         }
+    }  
+    internal class Dice
+    {
+        public int DiceNumbers { get; set; }
+        public int numberOfDiceRounds { get; set; }
+        
+
     }
 }

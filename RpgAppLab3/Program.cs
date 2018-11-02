@@ -23,10 +23,17 @@ namespace RpgAppLab3
             }
             if (command == "names")
             {
-                PersonGenerator personGenerator = new PersonGenerator();
-                var name = personGenerator.GetRandom();
-                Console.WriteLine(name);
+                var allNames = new[] { "Briana", "Ben", "David",
+                "Dana", "Felicia", "Felix", "Leonardo", "Amelie" };
+                var randomIndex = rnd.Next(allNames.Length);
+                Console.WriteLine(allNames[randomIndex]);
             }
+            if (command == "D10")
+                Console.WriteLine(rnd.Next(1,11));
+            if (command == "D4")
+                Console.WriteLine(rnd.Next(1,5));
+
+            var allEquipment = new []{ "hammer", "terminator", "dragon" };
             Console.ReadKey();
         }
     }  
