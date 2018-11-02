@@ -12,6 +12,8 @@ namespace RpgAppLab3
             "Dana", "Felicia", "Felix", "Frodo", "Hobbit", "Legolas", "Aragorn" };
         List<Person> persons = new List<Person>();
 
+        apgdadpjgadpjadpjgadpgjadgaadg
+
         public PersonGenerator()
         {
             foreach (var name in allNames)
